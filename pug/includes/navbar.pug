@@ -1,0 +1,34 @@
+nav.navbar.navbar-expand-lg.fixed-top
+  .container
+    a.navbar-brand(href='#')
+      img(src="../assets/images/LogoL.png", alt="")
+    #iconToggle.icon-toggle
+      span.icon-toggle-bar
+      span.icon-toggle-bar
+      span.icon-toggle-bar
+
+    #navbarSupportedContent.navbar-collapse
+      ul.navbar-nav.mx-auto.mb-2.mb-lg-0
+        li.nav-item
+          a(class = pageTitle === "Home" ? "nav-link  active" : "nav-link" , href='#') Home 
+        li.nav-item
+          a(class = pageTitle === "AboutUs" ? "nav-link  active" : "nav-link" , href='#') About Us
+        li.nav-item
+          a(class = pageTitle === "UseCases" ? "nav-link  active" : "nav-link" , href='#') Use cases
+        li.nav-item
+          a(class = pageTitle === "Developers" ? "nav-link  active" : "nav-link" , href='#') Developers         
+        li.nav-item
+          a(class = pageTitle === "Coverage" ? "nav-link  active" : "nav-link" , href='#') Coverage         
+        li.nav-item
+          a(class = pageTitle === "Pricing" ? "nav-link  active" : "nav-link" , href='#') Pricing 
+      nav.nav.justify-content-end.button-action
+        a.main-outline-btn.btn.btn-outline-primary(href='#') Get in touch
+        a.Sign-In(href='#') Sign In
+        a.search(href='#') 
+          i.fa-solid.fa-magnifying-glass.fa-fw
+
+      //- form.d-flex(role='search')
+      //-   input.form-control.me-2(type='search', placeholder='Search', aria-label='Search')
+      //-   button.btn.btn-outline-success(type='submit') Search
+
+    

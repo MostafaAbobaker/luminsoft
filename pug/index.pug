@@ -1,0 +1,71 @@
+- var pageTitle = "Home";
+doctype html
+html(lang="en")
+  head
+    include includes/head.pug
+  body
+    //- Start Nav Bar
+    include includes/navbar.pug
+    //- End Nav Bar
+    //- Content Body
+    #contentBody.content-body
+      //- Start Main Carousel
+      main.main-carousel
+        .content-box
+          .container 
+            .row.align-items-center
+              .col-lg-6.col-md-12.col-sm-12.animate__animated.animate__fadeInUpBig.animate__delay-.5s
+                #carouselExampleCaptions.carousel.slide
+                  .carousel-inner
+                    .carousel-item.active
+                      
+                      .carousel-caption
+                        h3.title-caption Banner Tilte!
+                        p.symbol-text Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        a.main-btn.btn.btn-primary(href="#") More Details
+                    .carousel-item
+                      
+                      .carousel-caption
+                        h3.title-caption Banner Tilte!
+                        p.symbol-text Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        a.main-btn.btn.btn-primary(href="#") More Details
+                    .carousel-item
+                      
+                      .carousel-caption
+                        h3.title-caption Banner Tilte!
+                        p.symbol-text Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+                        a.main-btn.btn.btn-primary(href="#") More Details
+                  
+
+                  .carousel-indicators
+                    button.active(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+                    button(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='1', aria-label='Slide 2')
+                    button(type='button', data-bs-target='#carouselExampleCaptions', data-bs-slide-to='2', aria-label='Slide 3')
+                  
+              .col-lg-6.col-md-12.col-sm-12.animate__animated.animate__fadeInRight
+                .image
+                  img.h-100(src="./assets/images/ImageLome.png", alt="")
+      //- End Main Carousel
+      //- Start Category list
+      section.category-list 
+        .container 
+          .row.justify-content-center
+            .col-lg.col-md-4.col-sm-6.col-xs-6.parent-col.animate__animated.animate__fadeInRight.animate__delay-1s 
+              .item.active 
+                include ./svg/fingerprint.svg
+            .col-lg.col-md-4.col-sm-6.col-xs-6.parent-col.animate__animated.animate__fadeInRight.animate__delay-2s  
+              .item 
+                include ./svg/face-scanner.svg
+            .col-lg.col-md-4.col-sm-6.col-xs-6.parent-col.animate__animated.animate__fadeInRight.animate__delay-3s  
+              .item.out-line 
+                include ./svg/contract.svg
+            .col-lg.col-md-4.col-sm-6.col-xs-6.parent-col.animate__animated.animate__fadeInRight.animate__delay-4s  
+              .item.out-line 
+                include ./svg/age-group.svg
+            .col-lg.col-md-4.col-sm-6.col-xs-6.parent-col.animate__animated.animate__fadeInRight.animate__delay-5s  
+              .item 
+                include ./svg/innovation.svg
+            
+      //- End Category list
+
+    include includes/script.pug
